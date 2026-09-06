@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Арапова Наталья - QA Engineer</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="assets/natali.jpeg" alt="Аватар Наталья Арапова">
+        <h1>Наталья Арапова</h1>
+        <p>QA Engineer</p>
+        <button type="button" id="theme-toggle">
+            Тёмная тема
+        </button>
+    </header>
+   <main>
+    <section id="about">
+      <h2>О себе</h2>
+      <p>
+        QA Engineer / Mobile QA Engineer с опытом более 5 лет. Тестировала преимущественно мобильные приложений для Android и iOS, а так же Web - приложения. Имею опыт работы с REST и GraphQL, API, клиент-серверным взаимодействием, авторизацией, токенами, push-уведомлениями, deep links, offline-режимом, кэшированием и интеграциями со сторонними сервисами. В работе использую Python и Pytest для автоматизации проверок, Postman и Swagger для тестирования API, SQL и PostgreSQL для валидации данных, Charles, Fiddler и Proxyman для анализа трафика, а также ADB, Logcat, Android Studio, Xcode и device farms для мобильного тестирования. Есть опыт работы с Kafka, Docker, GitLab CI, Linux, Grafana и системами управления тестированием и дефектами. На предыдущих проектах я самостоятельно выстраивала процесс тестирования, сопровождала релизы, составляла тестовую документацию, анализировала инциденты и взаимодействовала с разработчиками, аналитиками и DevOps. Благодаря оптимизации проверок удалось сократить время регрессионного тестирования на 60%, увеличить покрытие критических сценариев до 90% и снизить количество пост-релизных дефектов на 25%. 
+      </p>
+    </section>
+  </main>
+    <main>
+        <section id="education">
+            <h2>Образование</h2>
+            <p>
+                <strong>Учебное заведение:</strong> Нижегородский институт управления Российской академии государственной службы при Президенте Российской Федерации, Нижний Новгород 
+            </p>
+            <p>
+                <strong>Факультет:</strong> Факультет управления
+            </p>
+            <p>
+                <strong>Направление подготовки:</strong> Прикладная информатика
+            </p>
+        </section>
+    </main>
+    <main>
+        <section id="additional-education">
+            <h2>Дополнительное образование</h2>
+            <p>
+                <strong>Учебное заведение:</strong> Автономной некоммерческой организации дополнительного профессионального образования «Центральный многопрофильный институт профессиональной переподготовки и повышения квалификации»
+            </p>
+            <p>
+                <strong>Профессиональная переподготовка:</strong> Специалист по аналитике и базам данных в информационных системах
+            </p>
+        </section>
+    </main>
+    <main>
+        <section id="skills">
+            <h2>Навыки</h2>
+            <label for="skill-search">Поиск навыков</label>
+            <input type="text" id="skill-search" placeholder="Например, REST или SQL">
+            <div class="filter-buttons">
+                 <button type="button" class="filter-button" data-category="all">
+                    Все
+                </button>
+                
+                <button type="button" class="filter-button" data-category="manual">
+                    Ручное тестирование
+                </button>
+                
+                <button type="button" class="filter-button" data-category="api-backend">
+                    API и Backend
+                </button>
+                
+                <button type="button" class="filter-button" data-category="mobile">
+                    Автоматизация
+                </button>
+
+                <button type="button" class="filter-button" data-category="web">
+                    WEB
+                </button>
+
+                <button type="button" class="filter-button" data-category="analysis-tools">
+                    Инструменты анализа
+                </button>
+
+                <button type="button" class="filter-button" data-category="database">
+                    Базы данных
+                </button>
+
+                <button type="button" class="filter-button" data-category="queues-integrations">
+                    Очереди и интеграции
+                </button>
+
+                <button type="button" class="filter-button" data-category="automation">
+                    Автоматизация
+                </button>
+
+                <button type="button" class="filter-button" data-category="infrastructure">
+                    Инфраструктура
+                </button>
+
+                <button type="button" class="filter-button" data-category="monitoring">
+                    Мониторинг
+                </button>
+
+                <button type="button" class="filter-button" data-category="processes">
+                    Процессы
+                </button>
+            </div>
+            <p id="no-results" hidden>
+                Ничего не найдено.
+            </p>
+            <article class="skill-group" data-category="manual">
+                <h3>Ручное тестирование:</h3>
+                <ul>
+                    <li class="skill-item" data-category="manual">Функциональное</li>
+                    <li class="skill-item" data-category="manual">Регрессионное</li>
+                    <li class="skill-item" data-category="manual">Интеграционное</li>
+                    <li class="skill-item" data-category="manual">Smoke</li>
+                    <li class="skill-item" data-category="manual">Приемочное</li>
+                </ul>
+            </article>
+            <article class="skill-group" data-category="api-backend">
+                <h3>API и Baсkend:</h3>
+                <ul>
+                    <li class="skill-item" data-category="api-backend">REST API</li>
+                    <li class="skill-item" data-category="api-backend">GraphQL</li>
+                    <li class="skill-item" data-category="api-backend">Postman</li>
+                    <li class="skill-item" data-category="api-backend">Swagger</li>
+                    <li class="skill-item" data-category="api-backend">Insomnia</li>
+                </ul>
+            </article>
+            <article class="skill-group" data-category="mobile">
+                <h3>Mobile:</h3>
+                <ul class="skills-list">
+                    <li class="skill-item" data-category="mobile">Android</li>
+                    <li class="skill-item" data-category="mobile">iOS</li> 
+                    <li class="skill-item" data-category="mobile">ADB (Android Debug Bridge)</li>
+                    <li class="skill-item" data-category="mobile">Logcat</li>
+                    <li class="skill-item" data-category="mobile">BrowserStack</li>
+                    <li class="skill-item" data-category="mobile">Device Farms</li>
+                </ul>
+            </article>
+            <article class="skill-group" data-category="web">
+                <h3>WEB:</h3>
+                <ul class="skills-list">
+                    <li class="skill-item" data-category="web">Кроссбраузерное тестирование</li>
+                    <li class="skill-item" data-category="web">Анализ клиент-серверного взаимодействия</li> 
+                </ul>
+            </article>
+            <article class="skill-group" data-category="analysis-tools">
+                <h3>Инструменты анализа:</h3>
+                <ul class="skills-list">
+                    <li class="skill-item" data-category="analysis-tools">Charles</li>
+                    <li class="skill-item" data-category="analysis-tools">Proxyman</li>
+                    <li class="skill-item" data-category="analysis-tools">Fiddler</li>
+                    <li class="skill-item" data-category="analysis-tools">DevTools</li>
+                    <li class="skill-item" data-category="analysis-tools">Mitmproxy</li>
+                </ul>
+            </article>
+            <article class="skill-group" data-category="database">
+                <h3>Базы данных:</h3>
+                <ul class="skills-list">
+                    <li class="skill-item" data-category="database">PostgreSQL</li>
+                    <li class="skill-item" data-category="database">SQLite</li>
+                    <li class="skill-item" data-category="database">NoSQL</li>
+                </ul>
+            </article>
+            <article class="skill-group" data-category="queues-integrations">
+                <h3>Очереди и интеграции:</h3>
+                <ul class="skills-list">
+                    <li class="skill-item" data-category="queues-integrations">Kafka</li>
+                    <li class="skill-item" data-category="queues-integrations">Анализ данных в JSON</li>
+                </ul>
+            </article>
+            <article class="skill-group" data-category="automation">
+                <h3>Автоматизация:</h3>
+                <ul class="skills-list">
+                    <li class="skill-item" data-category="automation">Python</li>
+                    <li class="skill-item" data-category="automation">Pytest</li>
+                    <li class="skill-item" data-category="automation">Kotlin (базово)</li>
+                    <li class="skill-item" data-category="automation">Request</li>
+                </ul>
+            </article>
+            <article class="skill-group" data-category="infrastructure">
+                <h3>Инфраструктура:</h3>
+                <ul class="skills-list">
+                    <li class="skill-item" data-category="infrastructure">App Center Master</li>
+                    <li class="skill-item" data-category="infrastructure">Git</li>
+                    <li class="skill-item" data-category="infrastructure">GitLab CI</li>
+                    <li class="skill-item" data-category="infrastructure">Docker</li>
+                    <li class="skill-item" data-category="infrastructure">Linux</li>
+                    <li class="skill-item" data-category="infrastructure">Bash</li>
+                </ul>
+            </article>
+            <article class="skill-group" data-category="monitoring">
+                <h3>Мониторинг</h3>
+                <ul class="skills-list">
+                    <li class="skill-item" data-category="monitoring">Grafana</li>
+                    <li class="skill-item" data-category="monitoring">Kibana</li>
+                    <li class="skill-item" data-category="monitoring">Firebase</li>
+                    <li class="skill-item" data-category="monitoring">Sentry</li>
+                </ul>
+            </article>
+            <article class="skill-group" data-category="processes">
+                <h3>Процессы:</h3>
+                <ul class="skills-list">
+                    <li class="skill-item" data-category="processes">Jira</li>
+                    <li class="skill-item" data-category="processes">TestIT</li>
+                    <li class="skill-item" data-category="processes">Tест-дизайн</li>
+                    <li class="skill-item" data-category="processes">Баг-трекинг</li>
+                    <li class="skill-item" data-category="processes">Релизное тестирование</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <main>
+        <section id="experience">
+            <h2>Опыт работы</h2>
+            <p>
+                <strong>Организация:</strong> ООО "Байтэкс"
+            </p>
+            <p>
+                <strong>Должность:</strong> Младший тестировщик
+            </p>
+            <p>
+                <strong>Обязанности:</strong>
+            </p>
+            <ul>
+                <li>Функциональное, регрессионное, usability-тестирование мобильных и ПК-приложений</li>
+                <li>Работа с GraphQL, PostgreSQL, SQL – подготовка данных и проверка после ETL</li>
+                <li>Самостоятельно сопровождала релизы: планировала сроки, подготавливала сборки, выполняла smoke-тестирование и финальную проверку</li>
+                <li>Вела тестовую документацию и обучала новых стажеров основам тестирования</li>
+                <li>GitLab CI (запуск тестов, просмотр артефактов)</li>
+                <li>Активно использовала в работе техники тест-дизайна</li>
+                <li>Работала с консолью Linux, знаю основные утилиты и могу ими пользоваться</li>
+                <li>Была единственный тестировщиком на проектах</li>
+                <li>Опыт с SOAP-сервисами (анализ запросов/ответов, валидация)</li>
+            </ul>
+            <p>
+                <strong>Организация:</strong> OOO ВК Цифровые технологии
+            </p>
+            <p>
+                <strong>Должность:</strong> Инженер по тестированию
+            </p>
+            <p>
+                <strong>Обязанности:</strong>
+            </p>
+            <ul>
+                <li>Проводила регрессионное, функциональное и интеграционное тестирование нативных Web/iOS/Android-приложений</li>
+                <li>Тестировала клиент-серверное взаимодействие (HTTP, API-запросы/ответы), сценарии авторизации, работу токенов</li>
+                <li>Проверяла интеграции со сторонними SDK и монетизационные фичи (промо, триалы, тарифы)</li>
+                <li>Помогала стабилизировать релизы, контролировала раскатку фич и экспериментов на пользователях</li>
+                <li>Тестировала глубинные ссылки (диплинки), push-уведомления, офлайн-режим и кеширование</li>
+                <li>Участвовала в планировании релизного цикла и задач в спринте команды</li>
+                <li>Участвовала в разборе инцидентов от пользователей, взаимодействовала с разработчиками и DevOps</li>
+                <li>Проверяла адаптивную вёрстку и UX/UI на соответствие макетам в Figma</li>
+                <li>Тестировала REST API (Postman, Swagger), валидировала данные в PostgreSQL (сложные JOIN, оконные функции), готовила тестовые данные</li>
+                <li>Разрабатывала и запускала автоматизированные тесты на Python/Pytest, анализировала их результаты</li>
+                <li>Вела онбординг стажеров и объясняла базовые принципы тестирования и работы с проектом</li>
+            </ul>
+        </section>
+  <footer>
+    <p>© 2026 Наталья Арапова</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
